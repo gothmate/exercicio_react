@@ -6,11 +6,17 @@ import ComFilhos from './components/ComFilhos'
 import ComParametro from './components/ComParametro'
 import Card from './components/layout/Card';
 import Repeticao from "./components/Repeticao";
+import Condicional from "./components/Condicional";
 
 
 export default function App(props) {
     return (
         <div className="App">
+
+            <Card titulo="#5 - Condicional">
+                <Condicional numero={10}></Condicional>
+            </Card>
+
             <Card titulo="#4 - Repetição">
                 <Repeticao></Repeticao>
             </Card>

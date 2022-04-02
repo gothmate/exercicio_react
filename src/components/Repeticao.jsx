@@ -6,7 +6,7 @@ export default function Repeticao(props) {
     function getProdutosListItem() {
         return produtos.map(produto => {
             return ( 
-                <li>
+                <li key={produto.id}>
                     id{produto.id} - {produto.name}: R${produto.price}
                 </li>
             )
